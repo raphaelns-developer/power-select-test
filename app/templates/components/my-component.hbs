@@ -1,0 +1,11 @@
+<div class="test-trigger">
+  {{#power-select 
+    options=roles
+    placeholder='Selecionar'
+    onchange=(action "selectRoleChange") as |role|}}
+    {{role.name}}      
+  {{/power-select}} 
+</div>
+
+
+<span class="selected-role">{{selectedRole}}</span>
